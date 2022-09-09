@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background-color: blanchedalmond;
+}
+
+.container {
+    
+    border: 6px solid black;
+    display: grid;
+    height: 800px;
+
+    /* grid-template-columns: repeat(3,minmax(200px,1fr));
+    grid-template-rows: repeat(3,1fr); */
+    grid-template: repeat(3,200px) / repeat(3,200px);
+
+    /* column-gap: 20px;
+    row-gap: 30px; */
+    /* gap: 40px 20px; */
+
+    /* justify-items: center;
+    align-items: center; */
+    /* place-items: center end; */
+
+    /* justify-content: center;
+    align-content: center; */
+    place-content: space-evenly;
+
+}
+
+.grid-item {
+
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    
+}
+
+.item-1 {
+    background-color: blue;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.item-2 {
+    background-color: rgb(208, 255, 0);
+    place-self: center;
+}
+
+.item-3 {
+    background-color: rgba(186, 209, 103, 0.438);
+}
+
+.item-4 {
+    background-color: rgb(248, 195, 21);
+}
+
+.item-5 {
+    background-color: rgb(255, 0, 64);
+}
+
+.item-6 {
+    background-color: rgb(0, 140, 255);
+}
+
+.item-7 {
+    background-color: rgb(255, 0, 221);
+}
+
+.item-8 {
+    background-color: rgb(0, 204, 255);
+}
+
+.item-9 {
+    background-color: rgb(0, 255, 234);
+}
